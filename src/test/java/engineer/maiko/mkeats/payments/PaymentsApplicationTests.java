@@ -1,10 +1,10 @@
-package engineer.maiko.mkeats.pagamentos;
+package engineer.maiko.mkeats.payments;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PagamentosApplicationTests {
+class PaymentsApplicationTests {
 
 	@Test
 	void contextLoads() {

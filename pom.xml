@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>engineer.maiko.mkeats</groupId>
-	<artifactId>pagamentos</artifactId>
+	<artifactId>payments</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>pagamentos</name>
 	<description>MS de pagamentos da MKEats</description>
@@ -59,6 +59,23 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.8.0</version>
+		</dependency>
+		<dependency>
+			<groupId>engineer.maiko.mkeats</groupId>
+			<artifactId>payments</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.modelmapper.extensions</groupId>
+			<artifactId>modelmapper-spring</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

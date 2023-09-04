@@ -1,4 +1,4 @@
-package engineer.maiko.mkeats.pagamentos.model;
+package engineer.maiko.mkeats.payments.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -19,7 +19,7 @@ import java.math.BigDecimal;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Pagamento {
+public class Payment {
 
 
 
