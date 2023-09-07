@@ -40,7 +40,7 @@ public class PaymentController {
         return ResponseEntity.created(address).body(payment);
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     public ResponseEntity<PaymentDTO> update(@PathVariable @NotNull Long id, @RequestBody @Valid PaymentDTO dto) {
         PaymentDTO update = service.updatePayment(id, dto);
         return ResponseEntity.ok(update);
