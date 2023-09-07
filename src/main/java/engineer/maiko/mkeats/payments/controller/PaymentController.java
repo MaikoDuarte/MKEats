@@ -15,7 +15,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.net.URI;
 
 @RestController
-@RequestMapping("/pagamentos")
+@RequestMapping("/payments")
 public class PaymentController {
     @Autowired
     private PaymentService service;
@@ -35,7 +35,7 @@ public class PaymentController {
     @PostMapping
     public ResponseEntity<PaymentDTO> register(@RequestBody @Valid PaymentDTO dto, UriComponentsBuilder uriBuilder) {
         PaymentDTO payment = service.createPayment(dto);
-        URI address = uriBuilder.path("/pagamentos/{id").buildAndExpand(payment.getId()).toUri();
+        URI address = uriBuilder.path("/payments/{id}").buildAndExpand(payment.getId()).toUri();
 
         return ResponseEntity.created(address).body(payment);
     }

@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 
 
 @Entity
-@Table(name = "pagamentos")
+@Table(name = "payments")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -28,33 +28,33 @@ public class Payment {
     private Long id;
     @NotNull
     @Positive
-    private BigDecimal valor;
+    private BigDecimal value;
 
     @NotBlank
     @Size(max=100)
-    private String nome;
+    private String name;
 
     @NotBlank
     @Size(max=19)
-    private String numero;
+    private String number;
 
     @NotBlank
     @Size(max=7)
-    private String expiracao;
+    private String expiration;
 
     @NotBlank
     @Size(min=3, max=3)
-    private String codigo;
+    private String code;
 
     @NotNull
     @Enumerated(EnumType.STRING)
     private Status status;
 
     @NotNull
-    private Long pedidoId;
+    private Long orderId;
 
     @NotNull
-    private Long formaDePagamentoId;
+    private Long paymentMethodId;
 
 
 }
